@@ -1,0 +1,22 @@
+package: .
+import:
+- package: github.com/astaxie/beego
+  version: ~1.11.1
+  subpackages:
+  - cache
+  - cache/redis
+  - logs
+  - orm
+- package: github.com/lib/pq
+  version: ~1.0.0
+- package: sdrms/controllers
+- package: sdrms/enums
+- package: sdrms/models
+- package: sdrms/routers
+- package: sdrms/sysinit
+- package: sdrms/utils
+testImport:
+- package: github.com/smartystreets/goconvey
+  version: ~1.6.3
+  subpackages:
+  - convey

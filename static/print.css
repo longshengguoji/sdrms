@@ -1,0 +1,9 @@
+@media print {
+    #heading{ display:none; }
+    #footer {
+        display: none;
+    }
+    @page {
+        margin: 0;
+    }
+}
