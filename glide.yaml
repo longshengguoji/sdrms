@@ -1,22 +1,26 @@
-package: .
+package: sdrms
 import:
 - package: github.com/astaxie/beego
-  version: ~1.11.1
+  version: ^1.11.1
   subpackages:
-  - cache
-  - cache/redis
   - logs
   - orm
+- package: github.com/boombuler/barcode
+  version: ^1.0.0
+  subpackages:
+  - code128
+- package: github.com/disintegration/imaging
+  version: ^1.6.0
+- package: github.com/golang/freetype
+  subpackages:
+  - truetype
 - package: github.com/lib/pq
-  version: ~1.0.0
-- package: sdrms/controllers
-- package: sdrms/enums
-- package: sdrms/models
-- package: sdrms/routers
-- package: sdrms/sysinit
-- package: sdrms/utils
+  version: ^1.1.0
+- package: golang.org/x/image
+  subpackages:
+  - math/fixed
 testImport:
 - package: github.com/smartystreets/goconvey
-  version: ~1.6.3
+  version: ^1.6.3
   subpackages:
   - convey
