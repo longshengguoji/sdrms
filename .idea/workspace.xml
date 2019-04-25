@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4903380-6f5f-4fa4-b4ea-a0b1e5376464" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glide.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/glide.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/QrCodeUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/QrCodeUtil.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/FabricController.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+            <state relative-caret-position="58">
+              <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -48,8 +47,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sdrms.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="165">
               <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="121" column="27" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+              <folding>
+                <element signature="e#1937#2198#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +202,6 @@
         <option value="$PROJECT_DIR$/views/home/index.html" />
         <option value="$PROJECT_DIR$/static/plugins/printThis.js" />
         <option value="$PROJECT_DIR$/static/print.css" />
-        <option value="$PROJECT_DIR$/utils/QrCodeUtil.go" />
         <option value="$PROJECT_DIR$/controllers/FabricController.go" />
         <option value="$PROJECT_DIR$/views/role/index.html" />
         <option value="$PROJECT_DIR$/views/role/index_footerjs.html" />
@@ -200,12 +210,13 @@
         <option value="$PROJECT_DIR$/controllers/HomeController.go" />
         <option value="$PROJECT_DIR$/views/shared/layout_page.html" />
         <option value="$PROJECT_DIR$/sdrms.sql" />
+        <option value="$PROJECT_DIR$/utils/QrCodeUtil.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-30" />
+    <option name="y" value="270" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
@@ -232,6 +243,11 @@
               <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
               <item name="sdrms" type="462c0819:PsiDirectoryNode" />
               <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,21 +309,21 @@
     <frame x="1" y="23" width="1280" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8254717" visible="true" weight="0.22455573" />
-      <window_info id="Structure" order="1" sideWeight="0.1745283" side_tool="true" visible="true" weight="0.22455573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8321996" visible="true" weight="0.22455573" />
+      <window_info id="Structure" order="1" sideWeight="0.16780046" side_tool="true" visible="true" weight="0.22455573" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4951535" weight="0.3280757" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.5936995" visible="true" weight="0.33123028" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5936995" weight="0.33123028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4951535" weight="0.30441642" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.4063005" side_tool="true" visible="true" weight="0.33123028" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49434572" visible="true" weight="0.30441642" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5056543" side_tool="true" visible="true" weight="0.30441642" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -367,12 +383,6 @@
           <line>12</line>
           <properties />
           <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/utils/QrCodeUtil.go</url>
-          <line>121</line>
-          <properties />
-          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/utils/QrCodeUtil.go</url>
@@ -438,9 +448,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/shared/layout_pullbox.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/satori/go.uuid/generator.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -512,9 +519,6 @@
           <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/tablebg.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/utils_test.go">
       <provider selected="true" editor-type-id="text-editor" />
@@ -662,16 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-          <folding>
-            <element signature="e#1937#2198#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/backenduser/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -754,17 +748,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/FabricController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sdrms.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="165">
           <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/FabricController.go">
+    <entry file="file://$PROJECT_DIR$/utils/background.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/tablebg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        <state relative-caret-position="274">
+          <caret line="121" column="27" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+          <folding>
+            <element signature="e#1937#2198#0" />
+          </folding>
         </state>
       </provider>
     </entry>
