@@ -13,14 +13,14 @@ import (
 func GenerateQRCode(fnCode string, dateLabel string,resPicPath string){
 	encFNC1 := fnCode
 	qrCode,_ := code128.EncodeWithoutChecksum(encFNC1)
-	qrCode,_ = barcode.Scale(qrCode,130,70)
+	qrCode,_ = barcode.Scale(qrCode,140,50)
 
-	textBrush, err := NewTextBrush("utils/MicrosoftYaHei.ttf",14,image.Black,300)
+	textBrush, err := NewTextBrush("utils/MicrosoftYaHei.ttf",8,image.Black,140)
 	//textBrush, err := NewTextBrush("MicrosoftYaHei.ttf",7,image.Black,140)
 	if err != nil {
 		fmt.Println(err)
 	}
-	textBrush.FontSize = 6
+	textBrush.FontSize = 8
 
 	backgroundImg, err := imaging.Open("utils/background.jpg")
 	//backgroundImg, err := imaging.Open("background.jpg")
@@ -34,25 +34,25 @@ func GenerateQRCode(fnCode string, dateLabel string,resPicPath string){
 	draw.Draw(m,backgroundImg.Bounds(),backgroundImg,image.ZP,draw.Src)
 
 	draw.Draw(m,qrCode.Bounds().Add(image.Pt(8,12)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(145,12)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(140,12)),qrCode, image.ZP, draw.Src)
 	draw.Draw(m,qrCode.Bounds().Add(image.Pt(8,118)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(145,118)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(140,118)),qrCode, image.ZP, draw.Src)
 	draw.Draw(m,qrCode.Bounds().Add(image.Pt(8,223)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(145,223)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(140,223)),qrCode, image.ZP, draw.Src)
 
-	textBrush.DrawFontOnRGBA(m,image.Pt(40,85),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(190,85),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(40,190),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(190,190),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(40,295),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(190,295),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(40,70),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(180,70),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(40,175),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(180,175),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(40,280),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(180,280),encFNC1)
 
-	textBrush.DrawFontOnRGBA(m,image.Pt(20,97),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(165,97),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(20,202),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(165,202),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(20,309),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(165,309),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(10,87),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(152,87),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(10,192),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(152,192),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(10,299),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(152,299),dateText)
 
 
 	imaging.Save(m,resPicPath)
@@ -86,11 +86,12 @@ func GenerateTablePicture(tablePic TablePic,picPath string){
 
 	qrCode,_ = barcode.Scale(qrCode,140,34)
 
-	textBrush, err := NewTextBrush("utils/MicrosoftYaHei.ttf",14,image.Black,300)
+	textBrush, err := NewTextBrush("utils/MicrosoftYaHei.ttf",8,image.Black,300)
 	//textBrush, err := NewTextBrush("MicrosoftYaHei.ttf",8,image.Black,140)
 	if err != nil {
 		fmt.Print(err)
 	}
+	textBrush.FontSize = 8
 
 	backgroundImg, err := imaging.Open("utils/tablebg.jpg")
 	//backgroundImg, err := imaging.Open("tablebg.jpg")
