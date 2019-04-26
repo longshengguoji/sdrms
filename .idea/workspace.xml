@@ -64,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <element signature="e#1937#2198#0" />
               </folding>
@@ -336,21 +336,21 @@
     <frame x="0" y="23" width="1280" height="725" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8321996" visible="true" weight="0.22455573" />
-      <window_info id="Structure" order="1" sideWeight="0.16780046" side_tool="true" visible="true" weight="0.22455573" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8258824" visible="true" weight="0.22455573" />
+      <window_info id="Structure" order="1" sideWeight="0.17411764" side_tool="true" visible="true" weight="0.22455573" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49434572" weight="0.3265306" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.58966076" weight="0.328594" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.588853" visible="true" weight="0.328594" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49919224" weight="0.32861635" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48869145" visible="true" weight="0.30331755" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51130855" side_tool="true" visible="true" weight="0.30331755" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48869145" weight="0.30331755" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.411147" side_tool="true" visible="true" weight="0.328594" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -799,7 +799,7 @@
     <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
             <element signature="e#1937#2198#0" />
           </folding>
