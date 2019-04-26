@@ -6,11 +6,12 @@ import (
 )
 
 func TestGenerateQRCode(t *testing.T){
-	fnCode := "M171126391"
+	fnCode := "171126391"
 	timeFormat := "2006-01-02"
 	dateLabel := time.Now().Format(timeFormat)
+	picPath := "qrcode.jpg"
 
-	GenerateQRCode(fnCode , dateLabel)
+	GenerateQRCode(fnCode , dateLabel,picPath)
 }
 
 func TestGenerateTablePicture(t *testing.T){
@@ -35,5 +36,7 @@ func TestGenerateTablePicture(t *testing.T){
 		Val9:"TED",
 		DrawText:"m171126391",
 	}
-	GenerateTablePicture(tableParam)
+	picPath := "tablepic.jpg"
+
+	GenerateTablePicture(tableParam,picPath)
 }

@@ -13,15 +13,17 @@ import (
 func GenerateQRCode(fnCode string, dateLabel string,resPicPath string){
 	encFNC1 := fnCode
 	qrCode,_ := code128.EncodeWithoutChecksum(encFNC1)
-	qrCode,_ = barcode.Scale(qrCode,450,260)
+	qrCode,_ = barcode.Scale(qrCode,130,70)
 
 	textBrush, err := NewTextBrush("utils/MicrosoftYaHei.ttf",14,image.Black,300)
+	//textBrush, err := NewTextBrush("MicrosoftYaHei.ttf",7,image.Black,140)
 	if err != nil {
 		fmt.Println(err)
 	}
-	textBrush.FontSize = 14
+	textBrush.FontSize = 6
 
 	backgroundImg, err := imaging.Open("utils/background.jpg")
+	//backgroundImg, err := imaging.Open("background.jpg")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -31,26 +33,26 @@ func GenerateQRCode(fnCode string, dateLabel string,resPicPath string){
 	m := image.NewRGBA(backgroundImg.Bounds())
 	draw.Draw(m,backgroundImg.Bounds(),backgroundImg,image.ZP,draw.Src)
 
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(30,40)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(525,40)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(30,415)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(525,415)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(30,785)),qrCode, image.ZP, draw.Src)
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(525,785)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(8,12)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(145,12)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(8,118)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(145,118)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(8,223)),qrCode, image.ZP, draw.Src)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(145,223)),qrCode, image.ZP, draw.Src)
 
-	textBrush.DrawFontOnRGBA(m,image.Pt(205,310),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(700,310),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(205,685),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(700,685),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(205,1055),encFNC1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(700,1055),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(40,85),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(190,85),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(40,190),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(190,190),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(40,295),encFNC1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(190,295),encFNC1)
 
-	textBrush.DrawFontOnRGBA(m,image.Pt(155,350),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(650,350),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(155,725),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(650,725),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(155,1095),dateText)
-	textBrush.DrawFontOnRGBA(m,image.Pt(650,1095),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(20,97),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(165,97),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(20,202),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(165,202),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(20,309),dateText)
+	textBrush.DrawFontOnRGBA(m,image.Pt(165,309),dateText)
 
 
 	imaging.Save(m,resPicPath)
@@ -82,14 +84,16 @@ func GenerateTablePicture(tablePic TablePic,picPath string){
 	encFNC1 := tablePic.DrawText
 	qrCode, _ := code128.EncodeWithoutChecksum(encFNC1)
 
-	qrCode,_ = barcode.Scale(qrCode,500,100)
+	qrCode,_ = barcode.Scale(qrCode,140,34)
 
 	textBrush, err := NewTextBrush("utils/MicrosoftYaHei.ttf",14,image.Black,300)
+	//textBrush, err := NewTextBrush("MicrosoftYaHei.ttf",8,image.Black,140)
 	if err != nil {
 		fmt.Print(err)
 	}
 
 	backgroundImg, err := imaging.Open("utils/tablebg.jpg")
+	//backgroundImg, err := imaging.Open("tablebg.jpg")
 	if err != nil {
 		fmt.Print(err)
 	}
@@ -97,27 +101,27 @@ func GenerateTablePicture(tablePic TablePic,picPath string){
 	m := image.NewRGBA(backgroundImg.Bounds())
 	draw.Draw(m,backgroundImg.Bounds(),backgroundImg,image.ZP,draw.Src)
 
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,100),tablePic.Col1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,100),tablePic.Val1)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,200),tablePic.Col2)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,200),tablePic.Val2)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,290),tablePic.Col3)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,290),tablePic.Val3)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,375),tablePic.Col4)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,375),tablePic.Val4)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,470),tablePic.Col5)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,470),tablePic.Val5)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,560),tablePic.Col6)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,560),tablePic.Val6)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,650),tablePic.Col7)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,650),tablePic.Val7)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,740),tablePic.Col8)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,740),tablePic.Val8)
-	textBrush.DrawFontOnRGBA(m,image.Pt(80,830),tablePic.Col9)
-	textBrush.DrawFontOnRGBA(m,image.Pt(480,830),tablePic.Val9)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,23),tablePic.Col1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,23),tablePic.Val1)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,50),tablePic.Col2)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,50),tablePic.Val2)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,77),tablePic.Col3)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,77),tablePic.Val3)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,104),tablePic.Col4)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,104),tablePic.Val4)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,131),tablePic.Col5)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,131),tablePic.Val5)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,158),tablePic.Col6)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,158),tablePic.Val6)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,185),tablePic.Col7)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,185),tablePic.Val7)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,212),tablePic.Col8)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,212),tablePic.Val8)
+	textBrush.DrawFontOnRGBA(m,image.Pt(25,239),tablePic.Col9)
+	textBrush.DrawFontOnRGBA(m,image.Pt(140,239),tablePic.Val9)
 
-	draw.Draw(m,qrCode.Bounds().Add(image.Pt(220,920)),qrCode,image.ZP,draw.Src)
-	textBrush.DrawFontOnRGBA(m,image.Pt(400,1070),tablePic.DrawText)
+	draw.Draw(m,qrCode.Bounds().Add(image.Pt(60,270)),qrCode,image.ZP,draw.Src)
+	textBrush.DrawFontOnRGBA(m,image.Pt(100,307),tablePic.DrawText)
 
 	imaging.Save(m,picPath)
 }
