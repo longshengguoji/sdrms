@@ -13,7 +13,7 @@ import (
 func GenerateQRCode(fnCode string, dateLabel string,resPicPath string){
 	encFNC1 := fnCode
 	qrCode,_ := code128.EncodeWithoutChecksum(encFNC1)
-	qrCode,_ = barcode.Scale(qrCode,140,50)
+	qrCode,_ = barcode.Scale(qrCode,130,50)
 
 	textBrush, err := NewTextBrush("utils/MicrosoftYaHei.ttf",8,image.Black,140)
 	//textBrush, err := NewTextBrush("MicrosoftYaHei.ttf",7,image.Black,140)
