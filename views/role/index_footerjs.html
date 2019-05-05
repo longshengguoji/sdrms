@@ -372,14 +372,15 @@
             type: 'get',
             dataType: 'json',
             success: function (data) {
-                // imgPath = window.location.protocol + window.location.host + data.data
-                qrPicPath = "/"+data.data["qrPicPath"];
-                tablePicPath = "/"+data.data["tablePicPath"];
+                imgPath = "/"+data.data["qrPicPath"];
+                // qrPicPath = "/"+data.data["qrPicPath"];
+                // tablePicPath = "/"+data.data["tablePicPath"];
 
-                $('#printQRCode').attr('src',qrPicPath);
-                $('#printTablePic').attr('src',tablePicPath);
+                // $('#printQRCode').attr('src',qrPicPath);
+                // $('#printTablePic').attr('src',tablePicPath);
+                $('#printPic').attr('src',imgPath);
 
-                $('#printQRCode,#printTablePic' ).printThis({
+                $('#printPic' ).printThis({
                     debug: false,
                     importCSS: true,            // import page CSS
                     importStyle: false,         // import style tags

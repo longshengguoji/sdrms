@@ -45,7 +45,7 @@ func (fb *TextBrush) DrawFontOnRGBA(rgba *image.RGBA, pt image.Point, content st
 	// 计算行数以及拆解字符串
 	lines := list.New()
 	tl := fb.sliptString(content, lines, lineSize)
-	dy = tl*int(fb.FontSize) + 15
+	dy = tl*int(fb.FontSize) + 15+100
 
 	c := freetype.NewContext()
 	c.SetDPI(100)

@@ -2,17 +2,16 @@ package utils
 
 import (
 	"testing"
-	"time"
 )
 
-func TestGenerateQRCode(t *testing.T){
-	fnCode := "171126391"
-	timeFormat := "2006-01-02"
-	dateLabel := time.Now().Format(timeFormat)
-	picPath := "qrcode.jpg"
-
-	GenerateQRCode(fnCode , dateLabel,picPath)
-}
+//func TestGenerateQRCode(t *testing.T){
+//	fnCode := "M17112639"
+//	timeFormat := "2006-01-02"
+//	dateLabel := time.Now().Format(timeFormat)
+//	picPath := "qrcode.jpg"
+//
+//	GenerateQRCode(fnCode , dateLabel,picPath)
+//}
 
 func TestGenerateTablePicture(t *testing.T){
 	tableParam := TablePic{
@@ -38,5 +37,5 @@ func TestGenerateTablePicture(t *testing.T){
 	}
 	picPath := "tablepic.jpg"
 
-	GenerateTablePicture(tableParam,picPath)
+	GenerateQRAndTablePicture(tableParam,picPath)
 }

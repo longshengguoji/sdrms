@@ -151,16 +151,17 @@ func (c *FabricController) Print(){
 		Val9:m.Label,
 		DrawText:m.BarCode,
 	}
-	qrPicPath := "static/printImg/textQrCode.jpg"
-	tablePicPath := "static/printImg/tablePic.jpg"
-	utils.GenerateQRCode(tableParam.DrawText , dateLabel,qrPicPath)
-	utils.GenerateTablePicture(tableParam,tablePicPath)
+	//qrPicPath := "static/printImg/textQrCode.jpg"
+	//tablePicPath := "static/printImg/tablePic.jpg"
+	resPicPath := "static/printImg/output.jpg"
+	//utils.GenerateQRCode(tableParam.DrawText , dateLabel,qrPicPath)
+	utils.GenerateQRAndTablePicture(tableParam,resPicPath)
 
 	picPath := make(map[string]string)
 	result := make(map[string]interface{})
 	//resData := make(map[string]interface{})
-	picPath["qrPicPath"] = qrPicPath
-	picPath["tablePicPath"] = tablePicPath
+	picPath["qrPicPath"] = resPicPath
+	picPath["tablePicPath"] = resPicPath
 	result["data"] = picPath
 	result["success"] = 0
 	c.Data["json"] = result
