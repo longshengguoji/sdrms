@@ -5,7 +5,7 @@ import (
 )
 
 //func TestGenerateQRCode(t *testing.T){
-//	fnCode := "M17112639"
+//	fnCode := "m171126391"
 //	timeFormat := "2006-01-02"
 //	dateLabel := time.Now().Format(timeFormat)
 //	picPath := "qrcode.jpg"
@@ -33,7 +33,7 @@ func TestGenerateTablePicture(t *testing.T){
 		Val8:"2019-08-18",
 		Col9:"备注",
 		Val9:"TED",
-		DrawText:"m171126391",
+		DrawText:"M171126391",
 	}
 	picPath := "tablepic.jpg"
 
