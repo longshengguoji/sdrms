@@ -2,13 +2,22 @@ package utils
 
 import (
 	"fmt"
+	"github.com/astaxie/beego/orm"
 	"github.com/boombuler/barcode"
 	"github.com/boombuler/barcode/code128"
 	"github.com/disintegration/imaging"
 	"image"
 	"image/draw"
+	"reflect"
+	"strconv"
+	"time"
 )
 
+type QrCode struct{
+	Year int `json:"year"`
+	Code int `json:"code"`
+	Id int `json:"id"`
+}
 
 func GenerateQRCode(fnCode string, dateLabel string,resPicPath string){
 	encFNC1 := fnCode
@@ -204,4 +213,46 @@ func GenerateQRAndTablePicture(tablePic TablePic,picPath string){
 	textBrush.DrawFontOnRGBA(m,image.Pt(1700,1530),tablePic.DrawText)
 
 	imaging.Save(m,picPath)
+}
+
+func GetQRCode() (string,int,error) {
+	year := time.Now().Year()
+	yearNum := year%100
+	yearStr := strconv.Itoa(yearNum)
+
+	var qrCode QrCode
+	o := orm.NewOrm()
+	err := o.Raw("SELECT year, code, id FROM tb_qr_code WHERE year = ?", year).QueryRow(&qrCode)
+	newCode := 1111111
+	resId := 1
+		if err == nil && !reflect.DeepEqual(qrCode, QrCode{}) {
+				newCode = qrCode.Code + 1
+				resId = qrCode.Id + 1
+				qrCode.Code = newCode
+				qrCode.Id = resId
+			res, err := o.Raw("UPDATE tb_qr_code SET code = ?,id = ? WHERE year = ?", newCode,resId,year).Exec()
+			if err == nil {
+				num, _ := res.RowsAffected()
+				fmt.Println("mysql row affected nums: ", num)
+			}
+		}else{
+			qrCode.Code = newCode
+			qrCode.Year = year
+			var lastYearQrCode QrCode
+			err := o.Raw("SELECT year, code, id FROM tb_qr_code WHERE year = ?", year).QueryRow(&lastYearQrCode)
+			if err == nil{
+				resId = lastYearQrCode.Id + 1
+			}
+			qrCode.Id = resId
+
+			res, err := o.Raw("INSERT INTO tb_qr_code (year, code,id) VALUES(?,?,?)", year,newCode,resId).Exec()
+			if err == nil {
+				num, _ := res.RowsAffected()
+				fmt.Println("mysql row affected nums: ", num)
+			}
+
+		}
+	codeStr := strconv.Itoa(newCode)
+	resCode := "M"+ yearStr + codeStr
+	return resCode,resId,nil
 }

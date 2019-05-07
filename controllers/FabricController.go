@@ -65,11 +65,17 @@ func (c *FabricController) Save() {
 	}
 	o := orm.NewOrm()
 	if m.Id == 0 {
-		m.Id = 1
-		if _, err = o.Insert(&m); err == nil {
-			c.jsonResult(enums.JRCodeSucc, "添加成功", m.Id)
-		} else {
-			c.jsonResult(enums.JRCodeFailed, "添加失败", m.Id)
+		qrcodeStr,id,err := utils.GetQRCode()
+		if err == nil{
+			m.BarCode = qrcodeStr
+			m.Id = id
+			if _, err = o.Insert(&m); err == nil {
+				c.jsonResult(enums.JRCodeSucc, "添加成功", m.Id)
+			} else {
+				c.jsonResult(enums.JRCodeFailed, "添加失败", m.Id)
+			}
+		}else {
+			c.jsonResult(enums.JRCodeFailed, "编辑失败", m.Id)
 		}
 
 	} else {

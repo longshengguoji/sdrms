@@ -134,5 +134,10 @@ insert into tb_fabric_list values(1001,null,'面料','面料','12050033','珍珠
 insert into tb_fabric_list values(1002,null,'面料','面料','22050033','珍珠梭','SC-S-13-0000001',null,'绿色',null,'15.59MM',null,'梭织','客供','元/米','100%丝',null);
 insert into tb_fabric_list values(1003,null,'面料','面料','22050034','珍珠梭','SC-S-13-0000001',null,'绿色',null,'15.59MM',null,'机织','天供','元/米','100%丝',null);
 
-
+DROP TABLE IF EXISTS tb_qr_code;
+CREATE TABLE tb_qr_code(
+year int NOT NULL,
+code int NOT NULL,
+id int NOT NULL
+);
 
