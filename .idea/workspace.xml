@@ -3,17 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="c4903380-6f5f-4fa4-b4ea-a0b1e5376464" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/FabricController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/FabricController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.alert.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.critical.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.debug.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.emergency.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.error.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.info.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.notice.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rms.warning.2019-04-26.001.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/printImg/output.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/printImg/output.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/printImg/tablePic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/printImg/tablePic.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/printImg/textQrCode.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/printImg/textQrCode.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/QrCodeUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/QrCodeUtil.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/QrCodeUtil_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/QrCodeUtil_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/TextBrush.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/TextBrush.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/utils/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/qrcode.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/utils/qrcode.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/tablepic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/role/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/role/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/role/index_footerjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/role/index_footerjs.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,46 +38,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/github.com/astaxie/beego/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10620">
+              <caret line="725" selection-start-line="725" selection-end-line="725" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil.go">
+        <entry file="file://$PROJECT_DIR$/sdrms.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="137" column="78" selection-start-line="137" selection-start-column="78" selection-end-line="137" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/FabricController.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="162" column="22" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-              <folding>
-                <element signature="e#15#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/tablebg.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/role/index_footerjs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="382" column="28" selection-start-line="382" selection-start-column="28" selection-end-line="382" selection-end-column="28" />
+            <state relative-caret-position="218">
+              <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -84,18 +59,69 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/role/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="63" column="33" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#img#2;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/tablepic.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/conf/app.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/role/index_footerjs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2160">
+              <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/backenduser/index_footerjs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1545">
+              <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/role/index_headcssjs.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/role/edit_footerjs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/role/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -110,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log</find>
       <find>Error</find>
       <find>sdget</find>
       <find>/static/product/scripts/rms.js</find>
@@ -140,6 +165,7 @@
       <find>user-header</find>
       <find>qrPicPath</find>
       <find>printTablePic</find>
+      <find>目录</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -180,9 +206,7 @@
         <option value="$PROJECT_DIR$/static/sdtheme/css/sdtheme.css" />
         <option value="$PROJECT_DIR$/controllers/FabricListController.go" />
         <option value="$PROJECT_DIR$/models/init.go" />
-        <option value="$PROJECT_DIR$/views/backenduser/index_footerjs.html" />
         <option value="$PROJECT_DIR$/views/role/edit_footerjs.html" />
-        <option value="$PROJECT_DIR$/views/role/edit.html" />
         <option value="$PROJECT_DIR$/models/Fabric.go" />
         <option value="$PROJECT_DIR$/utils/qrCodeUtil.go" />
         <option value="$PROJECT_DIR$/utils/qrCodeUtil_test.go" />
@@ -195,20 +219,22 @@
         <option value="$PROJECT_DIR$/views/home/login.html" />
         <option value="$PROJECT_DIR$/controllers/HomeController.go" />
         <option value="$PROJECT_DIR$/views/shared/layout_page.html" />
-        <option value="$PROJECT_DIR$/sdrms.sql" />
         <option value="$PROJECT_DIR$/utils/TextBrush.go" />
         <option value="$PROJECT_DIR$/utils/QrCodeUtil_test.go" />
+        <option value="$PROJECT_DIR$/sdrms.sql" />
         <option value="$PROJECT_DIR$/controllers/FabricController.go" />
-        <option value="$PROJECT_DIR$/views/role/index.html" />
-        <option value="$PROJECT_DIR$/views/role/index_footerjs.html" />
+        <option value="$PROJECT_DIR$/views/role/edit.html" />
         <option value="$PROJECT_DIR$/utils/QrCodeUtil.go" />
+        <option value="$PROJECT_DIR$/views/role/index_footerjs.html" />
+        <option value="$PROJECT_DIR$/views/backenduser/index_footerjs.html" />
+        <option value="$PROJECT_DIR$/views/role/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="730" />
+    <option name="height" value="714" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -223,43 +249,6 @@
             <path>
               <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
               <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-              <item name="routers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="printImg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,24 +307,23 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="732" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="714" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82093024" visible="true" weight="0.2374798" />
-      <window_info id="Structure" order="1" sideWeight="0.17906977" side_tool="true" visible="true" weight="0.2374798" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8137931" visible="true" weight="0.24878837" />
+      <window_info id="Structure" order="1" sideWeight="0.18620689" side_tool="true" visible="true" weight="0.24878837" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49353796" weight="0.325" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.58804524" visible="true" weight="0.328125" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.58239096" weight="0.329582" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49919224" weight="0.32861635" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4838449" weight="0.303125" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.41195476" side_tool="true" visible="true" weight="0.328125" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.47738287" visible="true" weight="0.3006431" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5226171" side_tool="true" visible="true" weight="0.3006431" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -380,12 +368,12 @@
         </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/controllers/FabricController.go</url>
-          <line>102</line>
+          <line>108</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/controllers/FabricController.go</url>
-          <line>109</line>
+          <line>115</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
@@ -395,8 +383,23 @@
         </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/utils/QrCodeUtil.go</url>
-          <line>83</line>
+          <line>92</line>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controllers/FabricController.go</url>
+          <line>66</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/utils/QrCodeUtil.go</url>
+          <line>300</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controllers/FabricController.go</url>
+          <line>68</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/views/role/index_footerjs.html</url>
@@ -408,6 +411,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>o.Raw(&quot;SELECT year, code FROM tb_qr_code WHERE year = ?&quot;, year).QueryRow(&amp;qrCode)</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>c.Ctx.GetCookie()</expression-string>
         <language-id>go</language-id>
@@ -448,49 +456,9 @@
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>m</expression-string>
-        <language-id>go</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/plugins/bootstrap-table/bootstrap-table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="3073" column="23" selection-start-line="3073" selection-start-column="9" selection-end-line="3073" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#26#32#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backenduser/index_footerjs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="53" column="55" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Common.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/orm/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/role/index_headcssjs.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Role.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -501,22 +469,8 @@
     <entry file="file://$PROJECT_DIR$/utils/logs.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Fabric.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/utils_test.go">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/role/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="91" column="45" lean-forward="true" selection-start-line="91" selection-start-column="45" selection-end-line="91" selection-end-column="45" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/plugins/jquery-sdajax/jquery.sdajax.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -526,13 +480,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/shared/printThis.js" />
-    <entry file="file://$PROJECT_DIR$/views/role/edit_footerjs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/shared/globaljs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -548,11 +495,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/glide.yaml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -682,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdrms.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/shared/layout_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -703,14 +638,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/qrcode.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/background.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/tablebg.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/printImg/textQrCode.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/printImg/tablePic.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/qrcode.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Fabric.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="396" column="22" selection-start-line="396" selection-start-column="22" selection-end-line="396" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/printImg/output.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/FabricController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/TextBrush.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -719,53 +684,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/printImg/textQrCode.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/printImg/tablePic.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding>
-            <element signature="e#15#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/FabricController.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="162" column="22" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/role/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="63" column="33" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#img#2;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/role/index_footerjs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="382" column="28" selection-start-line="382" selection-start-column="28" selection-end-line="382" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/tablepic.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="137" column="78" selection-start-line="137" selection-start-column="78" selection-end-line="137" selection-end-column="78" />
+        <state relative-caret-position="795">
+          <caret line="155" column="19" selection-start-line="155" selection-start-column="19" selection-end-line="155" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#GenerateQRCode#0" />
+            <element signature="n#!!block;n#GenerateTablePicture#0" />
+            <element signature="n#!!block;n#GetQRCode#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/astaxie/beego/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10620">
+          <caret line="725" selection-start-line="725" selection-end-line="725" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/QrCodeUtil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/index_footerjs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backenduser/index_footerjs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/index_headcssjs.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/edit_footerjs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdrms.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
         </state>
       </provider>
     </entry>
